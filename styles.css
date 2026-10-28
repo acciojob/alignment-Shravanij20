@@ -1,27 +1,47 @@
-/*  your css code here. If applicable */
-
-h1{
-	text-align:center;
+h1 {
+  text-align: center;
 }
 
-table{
-	border: 1px solid black;
-	width:100%;
+/* Base table configuration with mandatory 1px spacing */
+table {
+  border: 1px solid black;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 1px; /* Required: Spacing 1px */
+  margin-bottom: 20px;
 }
 
-.left{
-	text-align:left;
+/* Explicit cell parameters enforcing alignment behaviors and padding */
+td {
+  border: 1px solid black; /* Required: Borders 1px solid black */
+  height: 20px;
+  padding: 1px; /* Required: Cell Padding 1px */
 }
 
-.middle{
-	text-align:center;
+/* Alignment Classes matching table 1 specifications */
+.center {
+  text-align: center;
 }
 
-.right{
-	text-align:right;
+.right {
+  text-align: right;
 }
 
-td{
-	border:1px solid black;
-	height: 20px;
+/* General requirement #3 helper selector */
+.middle {
+  margin: 0 auto;
+}
+
+/* Table 3 mandatory background color class markers */
+.green td {
+  background-color: green;
+}
+
+.blue td {
+  background-color: blue;
+}
+
+/* Ensure the layout table image remains perfectly centered */
+#t-image {
+  text-align: center;
 }
